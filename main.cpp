@@ -73,6 +73,22 @@ int main() {
                 tmp.fillDriver(); //getline(name, 100);
                 addItemBack(arrDrivers, NDrivers, tmp);
             }break;
+            case 3: {
+                cout << "Input number:"; cin >> text;
+                int id = -1;
+                for (int i =0; i < NDrivers; i++) {
+                    if (strcmp(text, arrDrivers[i].name) == 0) {
+                        id = i;
+                        break;
+                    }
+                }
+
+                if ( id == -1) cout << "Not found!\n";
+                else arrDrivers[id].showDriver();
+            }break;
+            case 4: {
+
+            }break;
         }
 
     } while (menu!=0);

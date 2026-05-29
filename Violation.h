@@ -16,6 +16,7 @@ struct Violation {
         dateViol.fillDate();
 
         //!!!!!!!!!!!
+        cin.ignore(); //ігноруємо попередній enter
         cout << "Input description: ";
         cin.getline(info, 100);
         fine = rand() % 9000 + 100;

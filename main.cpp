@@ -77,7 +77,7 @@ int main() {
                 cout << "Input number:"; cin >> text;
                 int id = -1;
                 for (int i =0; i < NDrivers; i++) {
-                    if (strcmp(text, arrDrivers[i].name) == 0) {
+                    if (strcmp(text, arrDrivers[i].carNumber) == 0) {
                         id = i;
                         break;
                     }
@@ -90,7 +90,7 @@ int main() {
                 cout << "Input number:"; cin >> text;
                 int id = -1;
                 for (int i =0; i < NDrivers; i++) {
-                    if (strcmp(text, arrDrivers[i].name) == 0) {
+                    if (strcmp(text, arrDrivers[i].carNumber) == 0) {
                         id = i;
                         break;
                     }
